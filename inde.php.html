@@ -1,0 +1,320 @@
+<?php
+session_start();
+if(($_SESSION["usuario"])!=''){
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+ 
+
+ 
+</head>
+
+
+<body>
+
+
+
+  
+
+</div>
+
+
+
+    
+    <header id="header">
+        <div class="container__header">
+            <div class="logo">
+                <img src="img/imagen2.jpg" alt="">
+            </div>
+            <div class="container__nav">
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#" class="select">Inicio</a></li> <li><a href="consejos para citas.html" class="select">Consejos</a></li>
+                        
+                    </ul>
+                    
+
+                   
+                </nav>
+
+
+
+                
+                <div class="btn__menu" id="btn_menu"><i class="fas fa-bars"></i></div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container__all" id="container_all">
+
+        <div class="cover">
+
+            <div class="container__cover">
+
+                <div class="container__info">
+                    <h1>Conoce gente</h1>
+                    <h2>chatea y liga</h2>
+                    <p>Juntos conectados somos mas </p>
+
+                    <input href="#" type="button" value="Descarga nuestra app">
+                    
+
+
+                </div>
+                <div class="container__vector">
+                    <img src="img/undraw_super_thank_you_re_f8bo.svg" alt="" width="500" height="500">
+                </div>
+            </div>
+
+        </div>
+
+<!--Carrusel-->        
+
+<div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/imagen1.jpg" class="d-block w-100" alt="..." width="20" height="570">
+    </div>
+    <div class="carousel-item">
+      <img src="img/imagen4.png" class="d-block w-100" alt="..." width="20" height="570">
+    </div>
+    <div class="carousel-item">
+      <img src="img/videollamada-635x480.jpg" class="d-block w-100" alt="..."  width="20" height="570">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+            </div>
+        </div>
+    </div>
+
+
+<!--login y registro-->
+<main>
+        
+        
+        <div class="contenedor__todo">
+            
+        <div class="caja__trasera">
+            
+        <div class="caja__trasera-login">
+            
+           <h1>¿ya tienes cuenta?</h1>
+
+           <p>Inicia  sesion para entrar en la pagina</p>
+
+           <button id="btn__iniciar-sesion">Iniciar Sesion</button>
+
+        </div>
+        <div class="caja__trasera-register">
+            
+           <h1>Aun no tengo una cuenta</h1>
+
+           <p>Registrate para que puedas inicar Sesión</p>
+
+           <button id="btn__registrarse">Registrate</button>
+
+        </div>
+
+
+    </div>
+
+    <div class="contenedor__login-register">
+        <!--login-->
+
+        <form action="php/login_usuario.php" method="POST" class="formulario__login">
+            
+            <h3>Iniciar Sesion</h3>
+            <input type="text" placeholder="Correo Electronico" name="correo">
+            <input type="password" placeholder="Contraseña" name="contrasena">
+            <center><button>Entrar</button></center>
+
+        </form>
+        <!--Registro-->
+        <form action="php/registro_usuario.php" method="POST" class="formulario__register">
+            <h3>Registrate</h3>
+            <input type="text" placeholder="nombre completo" name="nombre completo">
+            <input type="text" placeholder="usuario" name="usuario">
+            <input type="text" placeholder="correo" name="correo">
+            <input type="password" placeholder="contraseña" name="contrasena">
+            
+          <input type="checkbox" name="hombre"> Hombre<br>
+          <input type="checkbox" name="mujer"> mujer<br>
+            
+            <center><button>Registrarse</button></center>
+        </form>
+
+
+    </div>
+
+</div>
+</main>
+
+<!--Comentarios-->
+<br>
+<br>
+<br>
+<br>
+<section id="testimonials">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <center><h3 class="section-title">Comentarios</h3></center>
+          <div class="section-title-divider"></div>
+          <center><p class="section-description">cuenta tus experiencias</p></center>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/anonimo.jfif" alt=""></div>
+            <h4>Tomas</h4>
+            <span></span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> Recomendaria que mejoren el apartado de inicio de sesion y algunos apartados del perfil<small><img src="img/quote_sign_right.png" ></small>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b>100% recomendado<small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/anonimo2.jfif" alt=""></div>
+            <h4>Sara</h4>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+<!--Caja de cometarios-->
+<div class="container1">
+    <div class="row">
+        <div class="col-6">
+            <form action=""  class="form_comentarios">
+                
+                
+
+                <input type="text" placeholder="usuario" name="usuario" required="">   <input type="text" placeholder="correo" name="correo" required="">
+               
+                <br>
+                <br>
+
+               
+               
+
+                <textarea placeholder="comentario" name="msg"></textarea>
+                <button type="button" class="btn btn-outline-primary">Enviar</button>
+               
+                
+
+            </form>
+
+            
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--iniciamos con el footer y con los contactos, compañia redes Sociales etc-->
+        <Footer>
+            <div class="container__footer">
+
+                <div class="">
+                    <div class="logo">
+                        <img src="" alt="">
+                    </div>
+                    <div class="terms">
+                        
+                    </div>
+                </div>
+
+
+
+
+
+
+            <div class="box__footer">
+                    <h2>Contactanos</h2>
+                    <u href="#">Cel.4298874527</u>
+                    <u href="#">Correos chateayliga@gmail.com</u>
+                   
+                   
+                </div>
+
+                <div class="box__footer">
+                    <h2>Compañia</h2>
+                    <u href="#">Acerca de nosotros</u>
+                    <u href="#">visita nuestra app </u>
+                                
+                </div>
+
+                <div class="box__footer">
+                    <h2>Redes Sociales</h2>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i> Twitter</a>
+                    
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+            </div>
+
+            <div class="box__copyright">
+                <hr>
+                <p>Todos los derechos reservados © 2021 <b>Conoce gente chatea y liga</b></p>
+            </div>
+        </Footer>
+
+</div>
+
+
+
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/java.js"></script>
+</body>
+</html>
+
+<?php 
+}else{
+  header("Location: ../inde.php.html");
+}
+
+?>

@@ -1,0 +1,192 @@
+<?php
+session_start();
+if(($_SESSION["usuario"])!=''){
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Mi perfil</title>
+</head>
+<body>
+    <section class="seccion-perfil-usuario">
+        <div class="perfil-usuario-header">
+            <div class="perfil-usuario-portada">
+                <div class="perfil-usuario-avatar">
+                    <img src="img/perfil4.jfif" height="150px" height="200px" alt="img-avatar">
+                    <button type="button" class="boton-avatar">
+                        <i class="far fa-image"></i>
+                    </button>
+
+                </div>
+                <br>
+
+                <a href="inde.php.html" class="btn3">Salir</a>
+                <style>
+                  .btn3{
+                    background: #f5353d;
+                    padding: 10px 30px;
+                    color: white;
+                    border-radius: 20px;
+                    position: relative;
+                    left: 1px;
+                  }
+                </style>
+
+
+                
+            </div>
+        </div>
+        <div class="perfil-usuario-body">
+            <div class="perfil-usuario-bio">
+                <h3 class="titulo">Jose</h3>
+                <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="perfil-usuario-footer">
+                <ul class="lista-datos">
+                    <center><h1>Completa tus datos</h1></center>
+                  
+                   <br>
+                   <br> 
+                   <form name="datos" method="post" action="Datos1.php">
+                    
+                   intereses:
+                   <input type="text" name="intereses"><br><br>
+
+                  cuantos idiomas hablas: 
+                  <input type="text" name="cuantos_idiomas_ablas"><br><br>
+
+                  hooby:
+                  <input type="text" name="hooby"><br><br>
+
+
+                   
+                    
+                </ul>
+                <br>
+                <br>
+                <ul class="lista-datos">
+                  
+                   
+                    <li><i class="icono fas fa-map-marker-alt"></i> Ubicacion.</li>
+                    
+                  
+                    <li><i class="icono fas fa-share-alt"></i> Redes sociales.</li>
+
+                    
+                </ul>
+                
+            </div>
+            <div class="redes-sociales">
+                <a href="" class="boton-redes facebook fab fa-facebook-f"><i class="icon-facebook"></i></a>
+                <a href="" class="boton-redes twitter fab fa-twitter"><i class="icon-twitter"></i></a>
+                <a href="" class="boton-redes instagram fab fa-instagram"><i class="icon-instagram"></i></a>
+                
+            </div>
+           
+        </div>
+       
+    </section>
+    
+    <a href="" class="btn11">Enviar</a>
+                <style>
+                  .btn11{
+                    background: #f5353d;
+                    padding: 10px 30px;
+                    color: white;
+                    border-radius: 20px;
+                    position: relative;
+                    left: 400px;
+                  }
+                </style>
+
+
+<!--boton-->
+<br>
+<br>
+     <a href="chat/index.php" class="btn8">Chats</a>
+     <br>
+
+    
+<style>
+  .btn8{
+    background: #f5353d;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+    left: 1000px;
+  }
+</style>
+
+
+
+  
+
+
+<!--perfiles-->
+<section id="portfolio">
+    
+          <center><h3 class="section-title">Personas que te pueden interesar</h3></center>
+          
+         
+        </div>
+      </div>
+      
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-md-3">
+          <center><a class="portfolio-item" style="background-image: url(img/perfil1.jpg); "width="20" high="20" href="perfiles/perfil1.html">
+            <div class="details">
+              <h4>Nayeli Rodriguez</h4>
+              <span>ver mas</span>
+            </div>
+          </a>
+        </div></center>
+
+        <center><div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/perfil2.jpg);" href="perfiles/perfil2.html">
+            <div class="details">
+              <h4>Veronica</h4>
+              <span>ver mas</span>
+            </div>
+          </a>
+        </div></center>
+
+        <center><div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/perfil3.jpg);" href="perfiles/perfil3.html">
+            <div class="details">
+              <h4>Sophia</h4>
+              <span>ver mas</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div></center>
+  </section>
+
+
+
+        
+
+        
+
+</body>
+</html>
+
+<?php 
+}else{
+  header("Location: ../inde.php.html");
+}
+
+?>
